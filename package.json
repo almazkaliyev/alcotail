@@ -1,0 +1,26 @@
+{
+  "name": "alcotail",
+  "version": "0.0.1",
+  "description": "",
+  "repository": "git@github.com:almazkaliyev/alcotail.git",
+  "author": "almaz@kaliyev.dev",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "18.11.9",
+    "autoprefixer": "10.4.8",
+    "postcss": "8.4.16",
+    "tailwindcss": "3.1.8",
+    "typescript": "4.8.2",
+    "vite": "3.0.9",
+    "vite-plugin-solid": "2.3.0"
+  },
+  "dependencies": {
+    "axios": "1.1.3",
+    "solid-js": "1.5.1"
+  }
+}
