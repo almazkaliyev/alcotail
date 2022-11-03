@@ -1,9 +1,14 @@
-import type { Component } from 'solid-js';
+import { Routes as SolidRoutes, Route } from '@solidjs/router';
+import { Component, lazy } from 'solid-js';
+
+import { Routes } from 'constants/routes';
+
+const RandomCocktailPage = lazy(() => import('pages/RandomCocktail'))
+const WelcomePage = lazy(() => import('pages/Welcome'))
 
 export const App: Component = () => (
-  <div class="container mx-auto mt-20">
-    <div class="flex justify-center">
-      <h1 class="font-sans text-2xl text-emerald-600">Welcome to Alcotail</h1>
-    </div>
-  </div>
+  <SolidRoutes>
+    <Route path={Routes.home} component={WelcomePage} />
+    <Route path={Routes.random} component={RandomCocktailPage} />
+  </SolidRoutes>
 )
